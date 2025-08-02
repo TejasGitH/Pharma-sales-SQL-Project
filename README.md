@@ -18,9 +18,6 @@ This project demonstrates SQL data modeling and analysis on pharmaceutical sales
 3. Explore data with queries in `sql/03_queries.sql` and `sql/04_advanced_queries.sql`
 4. Utilize views and indexes defined in `sql/05_views_and_indexes.sql`
 
-## ER Diagram
-![ER Diagram](images/er_diagram.png)
-
 ## Key Business Insights
 - Top-selling drugs identified
 - Sales trends over months and years highlighted
