@@ -10,10 +10,11 @@ limit 5;
 
 -- Sales per category per month
 SELECT dr.Category, da.Year, da.Month, ROUND(SUM(f.SalesAmount),2) AS CategorySales
-FROM FactSales f
-JOIN DimDrug dr ON f.DrugID = dr.DrugID
-JOIN DimDate da ON f.DateKey = da.DateKey
+FROM factsales f
+JOIN dimdrug dr ON f.DrugID = dr.DrugID
+JOIN dimdate da ON f.DateKey = da.DateKey
 GROUP BY dr.Category, da.Year, da.Month
 ORDER BY dr.Category, da.Year, da.Month;
+
 
 
