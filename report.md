@@ -7,10 +7,11 @@ Analyze pharmaceutical sales data from multiple stores to identify best-selling 
 - Data loaded into a star schema with dimension and fact tables.
 - SQL queries executed over full dataset from 2014–2019.
 
-## Key Queries & Results
-- Aspirin and Lipitor are top-selling drugs by revenue.
-- Sales peak each January, possibly due to marketing or new year demand.
-- Downtown Pharmacy consistently outperforms Uptown Pharmacy in total sales.
+## Key Results
+- Top medicines – A few drugs made the most money, almost 40% of total sales.
+- Seasonal demand – Some medicines sold more in certain months, like flu drugs in winter.
+- Main revenue factor – Number of units sold mattered more than price in increasing sales.
+- Low-selling products – Some medicines sold very little everywhere, showing low demand.
 
 ## Performance Improvements
 - Added index on FactSales.DateKey improved monthly trend queries by 5×.
@@ -23,3 +24,4 @@ Analyze pharmaceutical sales data from multiple stores to identify best-selling 
 ## Next Steps
 - Create stored procedures for automated monthly reports.
 - Connect the database to BI tools like Tableau for visualization.
+
